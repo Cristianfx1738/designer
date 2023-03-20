@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Web Designer</title>
+    <link rel="stylesheet" href="css/normalized.css">
+    <link rel="shortcut icon" href="img/favicom.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="imagenes/favicom.ico" type="image/x-icon">
 </head>
 
 <body>
     <nav class="nav">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contacto</a>
     </nav>
+
 
     <section class="pre">
         <h1>Cristian Espinal</h1>
@@ -31,55 +36,53 @@
         <a class="pre-btn" href="#">Contactar</a>
     </section>
 
-    <main class="servicios">    
-            <h2>Mis Servicios</h2>
+    <main class="contenedor sombra">
+        <h2>Mis Servicios</h2>
+        <div class="servicios">
             <section class="html">
                 <h3>HTML</h3>
-                <img src="imagenes/html.png" alt="">
+                <img src="img/html.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </section>
             <section class="css">
                 <h3>CSS</h3>
-                <img src="imagenes/css.png" alt="">
+                <img src="img/css.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </section>
             <section class="js">
                 <h3>JavaScript</h3>
-                <img src="imagenes/js.png" alt="">
+                <img src="img/js.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </section>
+        </div> 
+        
+        <section class="contact-me">
+            <h2>Contacto</h2>
+            <form action="mailto:cristian173800@gmail.com">
+                <fieldset>
+                    <legend>Completa el formulario para ponerte en contacto</legend>
+                    
+                    <div><input type="text" placeholder=" Tu Nombre" required></div>
+                    <div>
+                        <input type="tel" placeholder=" Tu Numero" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder=" Tu Email" required>
+                    </div>
+                    <div>
+                        <label for="">Mensaje</label>
+                        <textarea name="mensaje" id="" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>  
+                </fieldset>
+            </form>
+        </section>
     </main>
-
-    <section class="contact-me">
-        <h2>Contacto</h2>
-        <form action="mailto:cristian173800@gmail.com">
-            <fieldset>
-                <legend>Completa el formulario para ponerte en contacto</legend>
-                
-                <div><input type="text" placeholder=" Tu Nombre" required></div>
-                <div>
-                    <input type="tel" placeholder=" Tu Numero" required>
-                </div>
-                <div>
-                    <input type="email" placeholder=" Tu Email" required>
-                </div>
-                <div>
-                    <label for="">Mensaje</label>
-                    <textarea name="mensaje" id="" cols="30" rows="10" required></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>  
-            </fieldset>
-
-
-        </form>
-
-    </section>
 
     <footer>
         <p>&#169; Todos los derechos reservados, Cristian Espinal 2023</p>
     </footer>
-    
 </body>
 </html>

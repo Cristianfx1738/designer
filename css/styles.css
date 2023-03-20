@@ -1,0 +1,53 @@
+:root {
+    --blanco: #fff;
+    --negro: #212121;
+    --amarillo: #ffc107;
+    --gris: #757575;
+    --azul: #0094a7;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    margin: 20px auto 1px auto;
+    color: #212121;
+    margin-top: 5rem;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+
+.nav {
+    background-color: #0094a7;
+    width: 120remp;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 20;
+    top: 0;
+    width: 100%;
+    list-style: none;
+    z-index: 1;
+}
+.nav a {
+    text-decoration: none;
+    color: var(--blanco);
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.nav a:hover {
+    background-color: var(--amarillo);
+    color: #212121;
+    border-radius: 5px;
+}
