@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Designer</title>
     <link rel="stylesheet" href="css/normalized.css">
     <link rel="shortcut icon" href="img/favicom.ico" type="image/x-icon">
@@ -21,7 +22,7 @@
                 <li><a href="#">Sobre mi</a></li>
             </ul>
         </nav>
-        <a class="nav-btn" href="#contact-me"><button>Contactar</button></a>
+        <a class="nav-btn" href="#divisor"><button>Contactar</button></a>
     </header> <!-- .nav -->
     
 
@@ -63,32 +64,40 @@
             </section>
         </div>  <!-- .servicios -->
         
-        <section id="contact-me">
-            <h2>Contacto</h2>
-            <form action="mailto:cristian173800@gmail.com">
+        <div id="divisor">
+            <div class="line"></div>
+                <h2>Contacto</h2>
+            <div class="line"></div>
+        </div>
+        <section class="formulario">
+            <form action="mailto:cristian173800@gmail.com" enctype="text/plain">
                 <fieldset>
                     <legend>Completa el formulario para ponerte en contacto</legend>
-                    
-                    <div><input type="text" placeholder=" Tu Nombre" required></div>
-                    <div>
-                        <input type="tel" placeholder=" Tu Numero" required>
-                    </div>
-                    <div>
-                        <input type="email" placeholder=" Tu Email" required>
-                    </div>
-                    <div>
-                        <label for="">Mensaje</label>
-                        <textarea name="mensaje" id="" cols="30" rows="10" required></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <input class="input-text fill" type="text" placeholder=" Tu Nombre" required>
+                        </div>
+                        <div class="campo">
+                            <input class="input-text fill" type="tel" placeholder=" Tu Numero" required>
+                        </div>
+                        <div class="campo">
+                            <input class="input-text fill" type="email" placeholder=" Tu Email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea class="input-text" name="mensaje" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div> <!-- .contenedor-campos -->
+
+                    <div class="enviar flex alinear-derecha">
+                        <input class="btn-enviar w100" type="submit" value="Enviar">
                     </div>  
                 </fieldset>
             </form>
         </section> <!-- .contact-me -->
     </main> <!-- .contenedor-sombra -->
 
-    <footer>
+    <footer class="footer">
         <p>&#169; Todos los derechos reservados, Cristian Espinal 2023</p>
     </footer>
 </body>
